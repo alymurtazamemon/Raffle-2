@@ -15,16 +15,16 @@ module.exports = {
       chainId: 31337,
       blockConfirmations: 1,
     },
-    goerli: {
-      chainId: 5,
-      blockConfirmations: 6,
-      url: process.env.RPC_URL,
-      accounts: [process.env.PRIVATE_KEY],
-    },
+    // goerli: {
+    //   chainId: 5,
+    //   blockConfirmations: 6,
+    //   url: process.env.RPC_URL,
+    //   accounts: [process.env.PRIVATE_KEY],
+    // },
     sepolia: {
       chainId: 11155111,
       blockConfirmations: 6,
-      url: process.env.RPC_URL,
+      url: process.env.SEPOLIA_RPC_URL,
       accounts: [process.env.PRIVATE_KEY],
     },
   },
@@ -37,7 +37,7 @@ module.exports = {
     },
   },
   mocha: {
-    timeout: 200000,
+    timeout: 500000,
   },
   etherscan: {
     apiKey: process.env.API_KEY,

@@ -31,7 +31,7 @@ const networkConfig = {
   },
 };
 
-const developmentChains = ["hardhat", "goerli","sepolia"];
+const developmentChains = ["hardhat", "localhost"];
 
 module.exports = {
   networkConfig,
